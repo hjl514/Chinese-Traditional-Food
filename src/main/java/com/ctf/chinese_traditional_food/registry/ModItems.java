@@ -389,7 +389,9 @@ public final class ModItems {
     // ==================================================================
 
     /** 稻种（Rice Seeds）。 */
-    public static final DeferredItem<Item> RICE_SEEDS = ITEMS.registerSimpleItem("rice_seeds");
+    public static final DeferredItem<Item> RICE_SEEDS = ITEMS.registerItem(
+            "rice_seeds",
+            props -> new BlockItem(ModBlocks.RICE_CROP.get(), props));
 
     /** 谷种（Millet Seeds）。 */
     public static final DeferredItem<Item> MILLET_SEEDS = ITEMS.registerSimpleItem("millet_seeds");
